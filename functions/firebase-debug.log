@@ -1,0 +1,768 @@
+[debug] [2023-10-01T13:23:31.981Z] ----------------------------------------------------------------------
+[debug] [2023-10-01T13:23:31.985Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-10-01T13:23:31.986Z] CLI Version:   12.6.1
+[debug] [2023-10-01T13:23:31.986Z] Platform:      win32
+[debug] [2023-10-01T13:23:31.987Z] Node Version:  v18.17.0
+[debug] [2023-10-01T13:23:31.988Z] Time:          Sun Oct 01 2023 16:23:31 GMT+0300 (East Africa Time)
+[debug] [2023-10-01T13:23:31.988Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-01T13:23:32.236Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-01T13:23:32.238Z] > authorizing via signed-in user (sanidureiti@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-10-01T13:23:32.258Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-01T13:23:32.259Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-10-01T13:23:32.278Z] [hub] writing locator at C:\Users\user\AppData\Local\Temp\hub-project-207b1.json
+[debug] [2023-10-01T13:23:32.302Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-01T13:23:32.302Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-01T13:23:32.303Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-10-01T13:23:32.307Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\sanidureiti_gmail_com_application_default_credentials.json
+[debug] [2023-10-01T13:23:32.312Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\sanidureiti_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\sanidureiti_gmail_com_application_default_credentials.json"}}
+[debug] [2023-10-01T13:23:32.316Z] > refreshing access token with scopes: []
+[debug] [2023-10-01T13:23:32.319Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-10-01T13:23:32.320Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-10-01T13:23:33.394Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-10-01T13:23:33.394Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-10-01T13:23:33.410Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-207b1/adminSdkConfig [none]
+[debug] [2023-10-01T13:23:34.260Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-207b1/adminSdkConfig 200
+[debug] [2023-10-01T13:23:34.260Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-207b1/adminSdkConfig {"projectId":"project-207b1","storageBucket":"project-207b1.appspot.com"}
+[debug] [2023-10-01T13:23:34.339Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-10-01T13:23:34.340Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-10-01T13:23:34.340Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\user\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\user\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-10-01T13:23:34.601Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-10-01T13:23:34.602Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\" for Cloud Functions..."}}
+[debug] [2023-10-01T13:23:34.639Z] Validating nodejs source
+[debug] [2023-10-01T13:23:37.747Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-01T13:23:37.748Z] Building nodejs source
+[debug] [2023-10-01T13:23:37.748Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-01T13:23:37.751Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-01T13:23:37.759Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8759
+
+[debug] [2023-10-01T13:23:42.114Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/project-207b1/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/project-207b1/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-10-01T13:25:20.464Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api)-2023-10-01T13:25:20.464Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:25:20.465Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api)-2023-10-01T13:25:20.464Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:25:20.471Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:25:20.574Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-10-01T13:26:31.413Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T13:26:31.413Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:31.413Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T13:26:31.413Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:26:31.414Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T13:26:31.420Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:26:31.422Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T13:26:31.439Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-10-01T13:26:31.440Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-10-01T13:26:33.445Z] [runtime-status] [2232] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2232] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-01T13:26:33.446Z] [runtime-status] [2232] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2232] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-01T13:26:33.447Z] [runtime-status] [2232] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2232] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-10-01T13:26:33.448Z] [runtime-status] [2232] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2232] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-01T13:26:33.833Z] [runtime-status] [2232] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2232] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-10-01T13:26:33.834Z] [runtime-status] [2232] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2232] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-10-01T13:26:33.835Z] [runtime-status] [2232] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2232] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-01T13:26:33.837Z] [runtime-status] [2232] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2232] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-01T13:26:33.842Z] [runtime-status] [2232] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2232] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-01T13:26:33.843Z] [runtime-status] [2232] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2232] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-10-01T13:26:36.989Z] [runtime-status] [2232] Functions runtime initialized. {"cwd":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions","node_version":"18.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2232] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\",\"node_version\":\"18.17.0\"}"}}
+[debug] [2023-10-01T13:26:36.989Z] [runtime-status] [2232] Listening to port: \\?\pipe\fire_emu_ccf0ab4861832f13 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2232] Listening to port: \\\\?\\pipe\\fire_emu_ccf0ab4861832f13"}}
+[debug] [2023-10-01T13:26:37.098Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:26:37.098Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:26:37.100Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:26:37.110Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 11.032ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 11.032ms"}}
+[debug] [2023-10-01T13:26:37.112Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:26:37.112Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:26:37.113Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:26:37.113Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.114Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.114Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.114Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.114Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:26:37.114Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T13:26:37.118Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:26:37.118Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T13:26:37.118Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:26:37.120Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:26:37.125Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.3618ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.3618ms"}}
+[debug] [2023-10-01T13:26:37.126Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:26:37.126Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:26:37.127Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:26:37.127Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.128Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.128Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.128Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.128Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:26:37.129Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T13:26:37.132Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:26:37.132Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T13:26:37.132Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:26:37.134Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:26:37.140Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 7.3947ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 7.3947ms"}}
+[debug] [2023-10-01T13:26:37.145Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:26:37.145Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:26:37.146Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:26:37.146Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.147Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.147Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.147Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.147Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:26:37.147Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T13:26:37.156Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:26:37.156Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T13:26:37.156Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:26:37.158Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:26:37.162Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.0124ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.0124ms"}}
+[debug] [2023-10-01T13:26:37.164Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:26:37.164Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:26:37.164Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:26:37.165Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.167Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.167Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.168Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.167Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:26:37.168Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T13:26:37.172Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:26:37.172Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T13:26:37.172Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:26:37.174Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:26:37.179Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 4.3957ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 4.3957ms"}}
+[debug] [2023-10-01T13:26:37.180Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:26:37.180Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:26:37.180Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:26:37.180Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.184Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.184Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.184Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.184Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:26:37.184Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T13:26:37.189Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:26:37.189Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T13:26:37.196Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:26:37.228Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:26:37.239Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 11.4318ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 11.4318ms"}}
+[debug] [2023-10-01T13:26:37.254Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:26:37.255Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:26:37.255Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:26:37.255Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.258Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.258Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.258Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.258Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:26:37.259Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T13:26:37.264Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:26:37.265Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T13:26:37.266Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:26:37.275Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:26:37.282Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 6.5771ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 6.5771ms"}}
+[debug] [2023-10-01T13:26:37.284Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:26:37.284Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:26:37.284Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:26:37.285Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.292Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.292Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:37.292Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T13:26:37.292Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:26:37.293Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T13:26:37.298Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:26:37.302Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T13:26:37.302Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:26:37.306Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:26:37.311Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.091ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.091ms"}}
+[debug] [2023-10-01T13:26:37.312Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:26:37.313Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:26:37.313Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:26:37.313Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:42.808Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T13:26:42.808Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:42.809Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T13:26:42.808Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:26:42.809Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T13:26:42.812Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:26:42.812Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T13:26:42.812Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:26:42.813Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:26:42.817Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 4.201ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 4.201ms"}}
+[debug] [2023-10-01T13:26:42.819Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:26:42.819Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:26:42.819Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:26:42.820Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:43.817Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T13:26:43.817Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:26:43.817Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T13:26:43.817Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:26:43.818Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T13:26:43.822Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:26:43.822Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T13:26:43.823Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:26:43.824Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:26:43.827Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 4.0626ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 4.0626ms"}}
+[debug] [2023-10-01T13:26:43.828Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:26:43.828Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:26:43.829Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:26:43.829Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:27:03.763Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T13:27:03.762Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:27:03.763Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T13:27:03.762Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:27:03.763Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T13:27:03.767Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:27:03.768Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T13:27:03.768Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:27:03.768Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:27:03.773Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 4.7821ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 4.7821ms"}}
+[debug] [2023-10-01T13:27:03.774Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:27:03.775Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:27:03.775Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:27:03.777Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:27:11.052Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T13:27:11.052Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:27:11.052Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T13:27:11.052Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:27:11.052Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T13:27:11.058Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:27:11.059Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T13:27:11.059Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:27:11.061Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:27:11.067Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 6.5325ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 6.5325ms"}}
+[debug] [2023-10-01T13:27:11.069Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:27:11.069Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:27:11.070Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:27:11.070Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:28:37.331Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api/evangadi-2023-10-01T13:28:37.331Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T13:28:37.331Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api/evangadi-2023-10-01T13:28:37.331Z"],"workRunningCount":1}
+[debug] [2023-10-01T13:28:37.331Z] Accepted request GET /project-207b1/us-central1/api/evangadi --> us-central1-api
+[debug] [2023-10-01T13:28:37.335Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T13:28:37.335Z] [functions] Got req.url=/project-207b1/us-central1/api/evangadi, mapping to path=/evangadi {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api/evangadi, mapping to path=/evangadi"}}
+[debug] [2023-10-01T13:28:37.335Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T13:28:37.336Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: BUSY"}}
+[debug] [2023-10-01T13:28:37.339Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 3.3137ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 3.3137ms"}}
+[debug] [2023-10-01T13:28:37.340Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: IDLE"}}
+[debug] [2023-10-01T13:28:37.340Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T13:28:37.340Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T13:28:37.340Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T15:04:45.518Z] File C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-01T15:04:46.524Z] Validating nodejs source
+[debug] [2023-10-01T15:04:49.981Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-01T15:04:49.981Z] Building nodejs source
+[debug] [2023-10-01T15:04:49.982Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-01T15:04:49.984Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-01T15:04:50.002Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8872
+
+[debug] [2023-10-01T15:04:50.967Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-10-01T15:04:51.023Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2023-10-01T15:04:51.024Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: FINISHING"}}
+[debug] [2023-10-01T15:04:51.046Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: exited"}}
+[debug] [2023-10-01T15:04:51.046Z] [worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-a1acbb00-b9c1-4a75-988f-021af8fc0aa6]: FINISHED"}}
+[debug] [2023-10-01T15:08:04.726Z] File C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-01T15:08:05.742Z] Validating nodejs source
+[debug] [2023-10-01T15:08:09.496Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-01T15:08:09.496Z] Building nodejs source
+[debug] [2023-10-01T15:08:09.496Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-01T15:08:09.498Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-01T15:08:09.503Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8341
+
+[debug] [2023-10-01T15:08:10.260Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-10-01T15:08:11.263Z] File C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-01T15:08:12.275Z] Validating nodejs source
+[debug] [2023-10-01T15:08:16.976Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-01T15:08:16.977Z] Building nodejs source
+[debug] [2023-10-01T15:08:16.977Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-01T15:08:16.978Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-01T15:08:16.985Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8702
+
+[debug] [2023-10-01T15:08:17.905Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-10-01T15:11:40.143Z] File C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-01T15:11:41.148Z] Validating nodejs source
+[debug] [2023-10-01T15:11:44.376Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-01T15:11:44.376Z] Building nodejs source
+[debug] [2023-10-01T15:11:44.376Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-01T15:11:44.378Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-01T15:11:44.387Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8379
+
+[debug] [2023-10-01T15:11:45.145Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-10-01T15:20:42.207Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api-2023-10-01T15:20:42.207Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T15:20:42.207Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api-2023-10-01T15:20:42.207Z"],"workRunningCount":1}
+[debug] [2023-10-01T15:20:42.207Z] Accepted request GET /project-207b1/us-central1/api --> us-central1-api
+[debug] [2023-10-01T15:20:42.213Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T15:20:42.213Z] [functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api, mapping to path=/"}}
+[debug] [2023-10-01T15:20:42.214Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2023-10-01T15:20:42.223Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-10-01T15:20:42.223Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-10-01T15:20:43.973Z] [runtime-status] [2548] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2548] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-01T15:20:43.976Z] [runtime-status] [2548] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2548] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-01T15:20:43.976Z] [runtime-status] [2548] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2548] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-10-01T15:20:43.978Z] [runtime-status] [2548] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2548] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-01T15:20:44.305Z] [runtime-status] [2548] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2548] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-10-01T15:20:44.305Z] [runtime-status] [2548] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2548] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-10-01T15:20:44.306Z] [runtime-status] [2548] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2548] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-01T15:20:44.308Z] [runtime-status] [2548] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2548] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-01T15:20:44.313Z] [runtime-status] [2548] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2548] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-10-01T15:20:44.314Z] [runtime-status] [2548] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.0","resolution":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2548] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-10-01T15:20:44.544Z] [runtime-status] [2548] Functions runtime initialized. {"cwd":"C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions","node_version":"18.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2548] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\user\\\\Desktop\\\\Evangadi\\\\phase-3\\\\week-14\\\\PROJECT\\\\amazon\\\\functions\",\"node_version\":\"18.17.0\"}"}}
+[debug] [2023-10-01T15:20:44.544Z] [runtime-status] [2548] Listening to port: \\?\pipe\fire_emu_f802ee8586d8a45e {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2548] Listening to port: \\\\?\\pipe\\fire_emu_f802ee8586d8a45e"}}
+[debug] [2023-10-01T15:20:44.639Z] [worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: IDLE"}}
+[debug] [2023-10-01T15:20:44.640Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T15:20:44.642Z] [worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: BUSY"}}
+[debug] [2023-10-01T15:20:44.658Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 15.5017ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 15.5017ms"}}
+[debug] [2023-10-01T15:20:44.659Z] [worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: IDLE"}}
+[debug] [2023-10-01T15:20:44.659Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T15:20:44.660Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T15:20:44.660Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T15:23:26.607Z] [work-queue] {"queuedWork":["/project-207b1/us-central1/api/evangadi-2023-10-01T15:23:26.607Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T15:23:26.608Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/project-207b1/us-central1/api/evangadi-2023-10-01T15:23:26.607Z"],"workRunningCount":1}
+[debug] [2023-10-01T15:23:26.608Z] Accepted request GET /project-207b1/us-central1/api/evangadi --> us-central1-api
+[debug] [2023-10-01T15:23:26.611Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-01T15:23:26.612Z] [functions] Got req.url=/project-207b1/us-central1/api/evangadi, mapping to path=/evangadi {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/project-207b1/us-central1/api/evangadi, mapping to path=/evangadi"}}
+[debug] [2023-10-01T15:23:26.612Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-10-01T15:23:26.613Z] [worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: BUSY"}}
+[debug] [2023-10-01T15:23:26.619Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 6.1513ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 6.1513ms"}}
+[debug] [2023-10-01T15:23:26.620Z] [worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: IDLE"}}
+[debug] [2023-10-01T15:23:26.620Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-10-01T15:23:26.620Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-10-01T15:23:26.621Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-10-01T15:25:32.030Z] File C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-01T15:25:33.044Z] Validating nodejs source
+[debug] [2023-10-01T15:25:35.704Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-01T15:25:35.704Z] Building nodejs source
+[debug] [2023-10-01T15:25:35.704Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-01T15:25:35.706Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-01T15:25:35.713Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8297
+
+[debug] [2023-10-01T15:25:36.438Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-10-01T15:25:36.477Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2023-10-01T15:25:36.477Z] [worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: FINISHING"}}
+[debug] [2023-10-01T15:25:36.490Z] [worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: exited"}}
+[debug] [2023-10-01T15:25:36.490Z] [worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a6faedf-a18b-438e-b668-76046176d591]: FINISHED"}}
+[debug] [2023-10-01T19:14:26.110Z] File C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-01T19:14:27.123Z] Validating nodejs source
+[debug] [2023-10-01T19:14:31.553Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-01T19:14:31.554Z] Building nodejs source
+[debug] [2023-10-01T19:14:31.554Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-01T19:14:31.556Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-01T19:14:31.565Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8526
+
+[debug] [2023-10-01T19:14:33.088Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-10-01T19:14:36.467Z] File C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-01T19:14:37.478Z] Validating nodejs source
+[debug] [2023-10-01T19:14:40.869Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-01T19:14:40.870Z] Building nodejs source
+[debug] [2023-10-01T19:14:40.870Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-01T19:14:40.872Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-01T19:14:40.881Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8907
+
+[debug] [2023-10-01T19:14:41.727Z] File C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-01T19:14:42.207Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-10-01T19:14:42.728Z] Validating nodejs source
+[debug] [2023-10-01T19:14:46.132Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-01T19:14:46.132Z] Building nodejs source
+[debug] [2023-10-01T19:14:46.133Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-01T19:14:46.136Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-01T19:14:46.144Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-10-01T19:14:46.150Z] File C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8048
+
+[debug] [2023-10-01T19:14:47.163Z] Validating nodejs source
+[debug] [2023-10-01T19:14:50.395Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-01T19:14:50.395Z] Building nodejs source
+[debug] [2023-10-01T19:14:50.395Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-01T19:14:50.397Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-01T19:14:50.405Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-10-01T19:14:50.412Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-10-01T19:14:50.428Z] File C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Evangadi\\phase-3\\week-14\\PROJECT\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] Serving at port 8373
+
+[debug] [2023-10-01T19:14:51.432Z] Validating nodejs source
+[debug] [2023-10-01T19:14:54.579Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-01T19:14:54.580Z] Building nodejs source
+[debug] [2023-10-01T19:14:54.580Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-01T19:14:54.582Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-01T19:14:54.589Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Evangadi\phase-3\week-14\PROJECT\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-10-01T19:14:54.597Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] Serving at port 8645
+
+[debug] [2023-10-01T19:14:55.921Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
