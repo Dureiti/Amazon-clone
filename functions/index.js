@@ -1,9 +1,7 @@
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
-const stripe = require("stripe")(
-	"sk_test_51Nw1WmEYyMxP0XsgaYKDDevzst6u94sSEhnNsrboKxv83g6aolvYksKMWn1Dn3XbdldVRS8gZBVxv9ufuzSU1Ixk00orO5a78U"
-);
+const stripe = require("stripe")(process.env.SECRET_KEY);
 // App config
 const app = express();
 // Middlewares
